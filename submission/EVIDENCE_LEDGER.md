@@ -13,21 +13,27 @@ claims. Update it immediately before final Devpost submission.
 | Genblaze tests | 2 Python tests | PASS |
 | Genblaze manifest | `genblaze-core==0.3.8`, verified `true`, 2 steps | PASS |
 | Production dependency audit | `npm audit --omit=dev --audit-level=high` | 0 vulnerabilities |
-| GitHub Actions | `verify` run `30536334429` on commit `2f542186071b8f053057092c6c6f5ee7ab57904a` | PASS |
+| GitHub Actions | `verify` run `30571905755` on deployed commit `f9cc48f36008535e65e5242ec5abb6358980fd7b` | PASS |
 | Desktop visual QA | 1440 × 1000 actual browser | PASS |
 | Mobile layout QA | 390 × 844; `scrollWidth === innerWidth` | PASS |
 | Public GitHub repository | `DreamersDreaming/dream-provenance-vault` | PASS |
 | Devpost participation | Registration confirmation shown for challenge `30205` | PASS |
 | Real B2 write/readback | Scoped-key S3 `PutObject` → `GetObject` body match → `DeleteObject`, HTTP 200, 2026-07-31 KST | PASS |
-| Public production URL | Isolated Netlify site `doream-provenance-vault` created without Git integration; five B2 production variables verified by redacted API metadata; deployment deliberately withheld until final local verification | READY, NOT DEPLOYED |
+| Public production URL | `https://doream-provenance-vault.netlify.app`; home 200, production function write 201, proof API 200, signed B2 image 200 | PASS |
+| Production E2E integrity | Browser input, server manifest, proof readback, and signed B2 image SHA-256 and byte length all match; Genblaze `verified: true`, 2 steps | PASS |
+| Production browser QA | Desktop 1440 × 1000 and mobile 390 × 844; home/proof 200, no horizontal overflow, zero console/page errors | PASS |
 | Devpost receipt | Required video and production URL pending | NOT SUBMITTED |
 
 ## Current source state
 
 - Standalone repository, isolated from the live Doream worktree
-- Branch: `codex/backblaze-provenance-vault`
-- Latest locally verified commit before external configuration:
-  recorded by `git rev-parse HEAD` after each verified commit
+- Branch: `main`
+- Deployed source commit:
+  `f9cc48f36008535e65e5242ec5abb6358980fd7b`
+- Netlify production deploy:
+  `6a6b9c22a714cd4e376725dc`
+- Verified production artifact:
+  `2c881441-60c5-447a-a57a-4fb7252c07d0`
 
 ## Claim boundary
 
@@ -67,9 +73,12 @@ Devpost receipt.
   restricted scopes. Credentials are therefore stored as production
   site-level variables, with no Git integration or automated builds, and are
   consumed only by the server-side Netlify Function code.
-- Netlify deployment: deliberately withheld until the final local verification
-  pass is complete; no normal Chrome window or duplicate service tab will be
-  opened
+- Netlify deployment: published from the isolated site with no Git integration.
+  The first upload attempt created an unpublished `error` deploy because root
+  test filenames were parsed as function names. A regression test was added,
+  the tests were moved outside the function root, local function packaging
+  produced only `proof.zip` and `vault.zip`, and the corrected production
+  deploy passed.
 
 ## Netlify deployment budget
 

@@ -28,7 +28,8 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] Public write/read rate limits configured
 - [x] Real B2 synthetic upload succeeded
 - [x] Real B2 private readback succeeded
-- [ ] Production proof URL opens in a fresh browser session
+- [x] Production proof URL opens in the authenticated Temp Chrome session and
+      through an independent public HTTP client
 
 ## Quality
 
@@ -38,14 +39,15 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] Desktop browser QA
 - [x] 390 px mobile QA and no horizontal overflow
 - [x] Keyboard and focus QA
-- [ ] Production console errors: zero
+- [x] Production console errors: zero
 - [x] Production dependency audit recorded
 
 ## Public assets
 
 - [x] Public GitHub repository:
       https://github.com/DreamersDreaming/dream-provenance-vault
-- [ ] Public production URL:
+- [x] Public production URL:
+      https://doream-provenance-vault.netlify.app
 - [ ] Public English demo video under 3 minutes on YouTube, Vimeo, or Youku:
 - [x] Repository README contains setup and claim boundaries
 - [x] Devpost copy names the actual providers and models
@@ -71,4 +73,4 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] B2 key is bucket-scoped and consumed only by server-side function code
 - [x] No secret appears in Git history, app bundle, screenshots, or chat
 - [x] No apartment address appears anywhere
-- [ ] No local user-profile path appears in the public manifest or bundle
+- [x] No local user-profile path appears in the public manifest or bundle
