@@ -8,5 +8,7 @@ dist/
 output/playwright/
 .playwright-cli/
 .pytest_cache/
+__pycache__/
+*.py[cod]
 output-*.png
 *.log
