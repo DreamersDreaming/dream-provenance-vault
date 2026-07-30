@@ -13,10 +13,11 @@ claims. Update it immediately before final Devpost submission.
 | Genblaze tests | 2 Python tests | PASS |
 | Genblaze manifest | `genblaze-core==0.3.8`, verified `true`, 2 steps | PASS |
 | Production dependency audit | `npm audit --omit=dev --audit-level=high` | 0 vulnerabilities |
-| GitHub Actions | `verify` run `30535136272` on commit `71385af` | PASS |
+| GitHub Actions | `verify` run `30536061207` on commit `89a4102` | PASS |
 | Desktop visual QA | 1440 × 1000 actual browser | PASS |
 | Mobile layout QA | 390 × 844; `scrollWidth === innerWidth` | PASS |
 | Public GitHub repository | `DreamersDreaming/dream-provenance-vault` | PASS |
+| Devpost participation | Registration confirmation shown for challenge `30205` | PASS |
 | Real B2 write/readback | No production credentials yet | NOT RUN |
 | Public production URL | Netlify authentication pending | NOT RUN |
 | Devpost receipt | Required video and production URL pending | NOT SUBMITTED |

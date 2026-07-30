@@ -35,11 +35,11 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] Node tests, TypeScript, and production build pass locally
 - [x] Genblaze Python tests pass locally
 - [ ] Re-run full verification after final configuration
-- [ ] Desktop browser QA
-- [ ] 390 px mobile QA and no horizontal overflow
-- [ ] Keyboard and focus QA
+- [x] Desktop browser QA
+- [x] 390 px mobile QA and no horizontal overflow
+- [x] Keyboard and focus QA
 - [ ] Production console errors: zero
-- [ ] Production dependency audit recorded
+- [x] Production dependency audit recorded
 
 ## Public assets
 
@@ -54,7 +54,7 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 
 ## Devpost
 
-- [ ] Entrant account joined the hackathon
+- [x] Entrant account joined the hackathon
 - [ ] Required project fields complete
 - [ ] Working app URL entered
 - [ ] Public repository URL entered

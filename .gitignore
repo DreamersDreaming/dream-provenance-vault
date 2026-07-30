@@ -7,6 +7,7 @@ dist/
 .env.*
 !.env.example
 output/playwright/
+output/*.zip
 .playwright-cli/
 .pytest_cache/
 __pycache__/
