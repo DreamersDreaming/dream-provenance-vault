@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { createProof } from "./lib/vault-service";
-import { TestMemoryStore } from "./lib/test-memory-store";
-import { config, makeProofHandler } from "./proof";
+import { createProof } from "../netlify/functions/lib/vault-service";
+import { TestMemoryStore } from "../netlify/functions/lib/test-memory-store";
+import { config, makeProofHandler } from "../netlify/functions/proof";
 
 const artifactId = "11111111-1111-4111-8111-111111111111";
 const pngBase64 = Buffer.from([
