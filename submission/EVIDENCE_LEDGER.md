@@ -29,8 +29,25 @@ claims. Update it immediately before final Devpost submission.
 ## Claim boundary
 
 Local PASS does not mean the hackathon submission is complete. Final GO
-requires a public GitHub repository, real private B2 upload/readback, public
-production URL, public sub-three-minute video, and a Devpost receipt.
+requires a judge-accessible GitHub repository, real private B2
+upload/readback, public production URL, public sub-three-minute video, and a
+Devpost receipt.
+
+## Official submission constraints — verified 2026-07-30 KST
+
+- Submission deadline: 2026-08-03 17:00 EDT
+  (2026-08-04 06:00 KST)
+- Judging period ends: 2026-08-11 17:00 EDT
+  (2026-08-12 06:00 KST)
+- Individual entrants are eligible and no purchase or payment is required.
+- The working app must use both Backblaze B2 and Genblaze.
+- A public or private GitHub repository is accepted; a private repository must
+  grant access to the `b2genblaze` GitHub account.
+- The public demo video must be shorter than three minutes and hosted on
+  YouTube, Vimeo, or Youku.
+- Submission materials and testing instructions must be in English or include
+  an English translation.
+- The working app must remain free and available through the judging period.
 
 ## External blockers
 

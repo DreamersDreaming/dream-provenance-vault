@@ -10,11 +10,14 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] Backblaze B2 is used by the working application
 - [x] Genblaze is used for the canonical media lineage
 - [ ] Re-open official rules immediately before final submission
-- [ ] Confirm final deadline and timezone on Devpost
+- [x] Official deadline confirmed: 2026-08-03 17:00 EDT
+      (2026-08-04 06:00 KST)
+- [x] Judging access period confirmed: through 2026-08-11 17:00 EDT
+      (2026-08-12 06:00 KST)
 
 ## Product
 
-- [x] Card PNG/WebP signature and 5 MiB size checks
+- [x] Card PNG/WebP signature and 4 MiB size checks
 - [x] Browser-side SHA-256
 - [x] Server-side SHA-256
 - [x] Final Genblaze asset hash must equal the server hash
@@ -40,12 +43,14 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 
 ## Public assets
 
-- [ ] Public GitHub repository:
+- [ ] GitHub repository URL (public preferred; private requires access for
+      `b2genblaze`):
 - [ ] Public production URL:
-- [ ] Public English demo video under 3 minutes:
+- [ ] Public English demo video under 3 minutes on YouTube, Vimeo, or Youku:
 - [ ] Repository README contains setup and claim boundaries
 - [ ] Devpost copy names the actual providers and models
 - [ ] Video shows the real production B2 write and proof readback
+- [ ] No copyrighted music or unlicensed third-party material appears in video
 
 ## Devpost
 
@@ -58,6 +63,7 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [ ] Terms and submission preview checked
 - [ ] Final submit pressed
 - [ ] Receipt URL or confirmation screenshot saved
+- [ ] Working app remains free and accessible through the judging period
 - [ ] Master application ledger updated
 
 ## Credentials and privacy

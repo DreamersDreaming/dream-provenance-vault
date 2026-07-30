@@ -50,6 +50,11 @@ filesystem paths are excluded. B2 credentials stay server-side. The bucket is
 private, artifact IDs are random UUIDs, and image access expires after 15
 minutes.
 
+This hackathon extension was built during the submission period. It adds the
+Genblaze lineage workflow, the private B2 evidence bundle, independent
+client/server hash verification, and the receipt retrieval experience to the
+existing Doream concept.
+
 ## How Backblaze B2 and Genblaze are essential
 
 Genblaze provides the canonical multi-step media lineage and asset hashes.
@@ -101,4 +106,3 @@ Vitest
 - Working app:
 - Public GitHub repository:
 - Public demo video:
-
