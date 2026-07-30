@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   MAX_CARD_BYTES,
+  MAX_GENBLAZE_BYTES,
   sanitizeTitle,
   sha256Bytes,
   validateGenblazeManifest,
@@ -39,7 +40,7 @@ describe("validateImageBytes", () => {
     );
   });
 
-  it("rejects files larger than five MiB", () => {
+  it("rejects files larger than four MiB", () => {
     const oversized = new Uint8Array(MAX_CARD_BYTES + 1);
     oversized.set(pngHeader);
     expect(() => validateImageBytes(oversized, "image/png")).toThrow(
@@ -127,5 +128,11 @@ describe("validateGenblazeManifest", () => {
         finalSha256
       )
     ).toThrow("local paths");
+  });
+
+  it("rejects an oversized Genblaze JSON payload", () => {
+    expect(() =>
+      validateGenblazeManifest(" ".repeat(MAX_GENBLAZE_BYTES + 1), "a".repeat(64))
+    ).toThrow("too large");
   });
 });

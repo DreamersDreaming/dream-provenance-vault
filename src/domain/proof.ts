@@ -1,4 +1,5 @@
-export const MAX_CARD_BYTES = 5 * 1024 * 1024;
+export const MAX_CARD_BYTES = 4 * 1024 * 1024;
+export const MAX_GENBLAZE_BYTES = 256 * 1024;
 export const SUPPORTED_CONTENT_TYPES = ["image/png", "image/webp"] as const;
 
 export type SupportedContentType = (typeof SUPPORTED_CONTENT_TYPES)[number];
@@ -112,6 +113,10 @@ export function validateGenblazeManifest(
   serialized: string,
   expectedFinalSha256: string
 ): GenblazeManifestSummary {
+  if (new TextEncoder().encode(serialized).length > MAX_GENBLAZE_BYTES) {
+    throw new Error("Genblaze manifest is too large");
+  }
+
   let parsed: GenblazeEnvelope;
   try {
     parsed = JSON.parse(serialized) as GenblazeEnvelope;

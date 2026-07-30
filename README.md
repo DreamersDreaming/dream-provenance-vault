@@ -111,6 +111,9 @@ The Node verification gate runs the full test suite, TypeScript checking, and a
 production Vite build. The Python gate builds and verifies the real two-step
 Genblaze manifest.
 
+Cards are limited to 4 MiB so their Base64 request stays below Netlify's
+buffered function payload limit. Genblaze manifests are limited to 256 KiB.
+
 ## Project status
 
 The implementation is locally verified. A production claim is made only after:
@@ -120,4 +123,3 @@ The implementation is locally verified. A production claim is made only after:
 - the repository is public;
 - the demo video is public and shorter than three minutes; and
 - Devpost provides final submission receipt evidence.
-

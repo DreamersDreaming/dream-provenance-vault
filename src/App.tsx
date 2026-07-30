@@ -7,6 +7,7 @@ import {
 } from "react";
 import {
   MAX_CARD_BYTES,
+  MAX_GENBLAZE_BYTES,
   sha256Bytes,
   validateGenblazeManifest,
   validateImageBytes,
@@ -119,7 +120,7 @@ export function App({
     setGenblazeSummary(null);
 
     if (selected.size > MAX_CARD_BYTES) {
-      setError("Choose a PNG or WebP no larger than 5 MiB.");
+      setError("Choose a PNG or WebP no larger than 4 MiB.");
       setFile(null);
       setState("idle");
       return null;
@@ -168,6 +169,11 @@ export function App({
     setReceipt(null);
     setGenblazeManifest("");
     setGenblazeSummary(null);
+
+    if (selected.size > MAX_GENBLAZE_BYTES) {
+      setError("Choose a Genblaze JSON manifest no larger than 256 KiB.");
+      return;
+    }
 
     if (!expectedHash) {
       setError("Choose and fingerprint the Dream Card first.");
