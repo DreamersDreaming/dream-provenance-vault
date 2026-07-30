@@ -1,0 +1,12 @@
+node_modules/
+.venv/
+dist/
+.netlify/
+.env
+.env.*
+!.env.example
+output/playwright/
+.playwright-cli/
+.pytest_cache/
+output-*.png
+*.log

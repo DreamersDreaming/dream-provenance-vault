@@ -1,0 +1,115 @@
+{
+  "canonical_hash": "f4b59e66dfb0c45e7f02dc53eef70464451341dd1d79107864fe72f74ba6182f",
+  "encryption_scheme": null,
+  "manifest_uri": null,
+  "run": {
+    "completed_at": null,
+    "created_at": "2026-07-30T10:04:19.775561Z",
+    "idempotency_key": null,
+    "metadata": {},
+    "name": "dream-provenance-vault",
+    "parent_run_id": null,
+    "project_id": null,
+    "run_id": "78257198-8e43-4fe7-a5d5-913f2f69c65f",
+    "started_at": null,
+    "status": "completed",
+    "steps": [
+      {
+        "assets": [
+          {
+            "asset_id": "9052d0a8-d437-4a12-97fd-3f4032692874",
+            "audio": null,
+            "duration": null,
+            "height": null,
+            "media_type": "image/png",
+            "metadata": {},
+            "sha256": "cbdec1e0e21b9bf324da7406cb82891c86d2ad654b59222096bb74bd0c8c8f34",
+            "size_bytes": null,
+            "tracks": null,
+            "url": "https://doream.org/provenance/synthetic-source/cbdec1e0e21b9bf324da7406cb82891c86d2ad654b59222096bb74bd0c8c8f34",
+            "video": null,
+            "width": null
+          }
+        ],
+        "completed_at": null,
+        "cost_usd": null,
+        "error": null,
+        "error_code": null,
+        "inputs": [],
+        "metadata": {},
+        "modality": "image",
+        "model": "doream-image-generation",
+        "model_hash": null,
+        "model_version": null,
+        "negative_prompt": null,
+        "params": {
+          "artifact_role": "synthetic-demo-source",
+          "privacy": "prompt-redacted"
+        },
+        "prompt": "[private prompt redacted]",
+        "prompt_visibility": "public",
+        "provider": "doream",
+        "provider_payload": {},
+        "retries": 0,
+        "run_id": "78257198-8e43-4fe7-a5d5-913f2f69c65f",
+        "seed": null,
+        "started_at": null,
+        "status": "succeeded",
+        "step_id": "82681b6d-d6d5-42ee-9f24-05da8da72979",
+        "step_index": 0,
+        "step_type": "generate"
+      },
+      {
+        "assets": [
+          {
+            "asset_id": "8c6d0c14-0657-4f12-ac90-6c2816c3d01e",
+            "audio": null,
+            "duration": null,
+            "height": null,
+            "media_type": "image/png",
+            "metadata": {},
+            "sha256": "a72e8a978a640da8152b9b527fca5ebcc85be8e604c589db40cdd7d1e7986eef",
+            "size_bytes": null,
+            "tracks": null,
+            "url": "https://doream.org/provenance/dream-card/a72e8a978a640da8152b9b527fca5ebcc85be8e604c589db40cdd7d1e7986eef",
+            "video": null,
+            "width": null
+          }
+        ],
+        "completed_at": null,
+        "cost_usd": null,
+        "error": null,
+        "error_code": null,
+        "inputs": [],
+        "metadata": {},
+        "modality": "image",
+        "model": "doream-prism-card-renderer",
+        "model_hash": null,
+        "model_version": null,
+        "negative_prompt": null,
+        "params": {
+          "finish_profile": "prism-foil",
+          "input_sha256": "cbdec1e0e21b9bf324da7406cb82891c86d2ad654b59222096bb74bd0c8c8f34",
+          "private_text_included": false
+        },
+        "prompt": "Render a privacy-safe Prism Dream Card from the generated image",
+        "prompt_visibility": "public",
+        "provider": "doream",
+        "provider_payload": {},
+        "retries": 0,
+        "run_id": "78257198-8e43-4fe7-a5d5-913f2f69c65f",
+        "seed": null,
+        "started_at": null,
+        "status": "succeeded",
+        "step_id": "852733c0-d6d8-40ca-8545-712f26557523",
+        "step_index": 1,
+        "step_type": "generate"
+      }
+    ],
+    "tenant_id": null
+  },
+  "schema_version": "1.5",
+  "signature": null,
+  "transfer_failures": [],
+  "verified": true
+}
