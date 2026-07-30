@@ -26,15 +26,15 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] Private bucket design and short-lived signed image URL
 - [x] Three-object receipt commit order
 - [x] Public write/read rate limits configured
-- [ ] Real B2 synthetic upload succeeded
-- [ ] Real B2 private readback succeeded
+- [x] Real B2 synthetic upload succeeded
+- [x] Real B2 private readback succeeded
 - [ ] Production proof URL opens in a fresh browser session
 
 ## Quality
 
 - [x] Node tests, TypeScript, and production build pass locally
 - [x] Genblaze Python tests pass locally
-- [ ] Re-run full verification after final configuration
+- [x] Re-run full verification after final configuration
 - [x] Desktop browser QA
 - [x] 390 px mobile QA and no horizontal overflow
 - [x] Keyboard and focus QA
@@ -68,7 +68,7 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 
 ## Credentials and privacy
 
-- [ ] B2 key is bucket-scoped and server-side only
-- [ ] No secret appears in Git history, app bundle, screenshots, or chat
-- [ ] No apartment address appears anywhere
+- [x] B2 key is bucket-scoped and consumed only by server-side function code
+- [x] No secret appears in Git history, app bundle, screenshots, or chat
+- [x] No apartment address appears anywhere
 - [ ] No local user-profile path appears in the public manifest or bundle

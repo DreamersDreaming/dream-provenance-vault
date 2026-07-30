@@ -3,7 +3,7 @@
 This file separates verified implementation evidence from external submission
 claims. Update it immediately before final Devpost submission.
 
-## Local implementation — verified 2026-07-30 KST
+## Local implementation — verified 2026-07-31 KST
 
 | Gate | Evidence | Status |
 |---|---|---|
@@ -13,13 +13,13 @@ claims. Update it immediately before final Devpost submission.
 | Genblaze tests | 2 Python tests | PASS |
 | Genblaze manifest | `genblaze-core==0.3.8`, verified `true`, 2 steps | PASS |
 | Production dependency audit | `npm audit --omit=dev --audit-level=high` | 0 vulnerabilities |
-| GitHub Actions | `verify` run `30536061207` on commit `89a4102` | PASS |
+| GitHub Actions | `verify` run `30536334429` on commit `2f542186071b8f053057092c6c6f5ee7ab57904a` | PASS |
 | Desktop visual QA | 1440 × 1000 actual browser | PASS |
 | Mobile layout QA | 390 × 844; `scrollWidth === innerWidth` | PASS |
 | Public GitHub repository | `DreamersDreaming/dream-provenance-vault` | PASS |
 | Devpost participation | Registration confirmation shown for challenge `30205` | PASS |
-| Real B2 write/readback | No production credentials yet | NOT RUN |
-| Public production URL | Netlify authentication pending | NOT RUN |
+| Real B2 write/readback | Scoped-key S3 `PutObject` → `GetObject` body match → `DeleteObject`, HTTP 200, 2026-07-31 KST | PASS |
+| Public production URL | Isolated Netlify site `doream-provenance-vault` created without Git integration; five B2 production variables verified by redacted API metadata; deployment deliberately withheld until final local verification | READY, NOT DEPLOYED |
 | Devpost receipt | Required video and production URL pending | NOT SUBMITTED |
 
 ## Current source state
@@ -52,8 +52,34 @@ Devpost receipt.
   an English translation.
 - The working app must remain free and available through the judging period.
 
-## External blockers
+## External configuration
 
-- Backblaze account creation: CAPTCHA required; no credit card requested
-- Netlify CLI authentication: not started until the Backblaze browser approval
-  is completed, to avoid duplicate pop-ups
+- Backblaze account: active for `ceo@doream.org` in `US West`; no credit card
+  requested
+- Private bucket: `doream-provenance-vault-20260731`, region `us-west-004`,
+  default SSE-B2 encryption enabled, Object Lock disabled
+- Application key: restricted to the private bucket and `artifacts/` prefix,
+  read/write, 60-day lifetime; the credential value is not stored in Git,
+  documents, screenshots, or the frontend bundle
+- Netlify authentication: existing account login verified in the authenticated
+  Temp Chrome session; no password was changed
+- Netlify environment: the Free plan does not permit secret variables with
+  restricted scopes. Credentials are therefore stored as production
+  site-level variables, with no Git integration or automated builds, and are
+  consumed only by the server-side Netlify Function code.
+- Netlify deployment: deliberately withheld until the final local verification
+  pass is complete; no normal Chrome window or duplicate service tab will be
+  opened
+
+## Netlify deployment budget
+
+- Team: `ddunis`, Free plan
+- Billing cycle: 2026-07-22 through 2026-08-21
+- Allowance: 300 credits
+- Current UI evidence on 2026-07-31: 102.7 of 300 credits remain; 13 production
+  deploys consumed 195 credits in the current billing cycle
+- Deployment policy: no preview deploys and no iterative production deploys;
+  complete B2 configuration and local verification first, then publish the
+  exact verified commit once
+- Isolation policy: create a separate hackathon site; do not attach, replace,
+  or reconfigure any existing Doream/ZeroPlate/ChemiChecks site
