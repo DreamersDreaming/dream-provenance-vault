@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { createProof } from "./lib/vault-service";
 import { TestMemoryStore } from "./lib/test-memory-store";
-import { makeProofHandler } from "./proof";
+import { config, makeProofHandler } from "./proof";
 
 const artifactId = "11111111-1111-4111-8111-111111111111";
 const pngBase64 = Buffer.from([
@@ -33,6 +33,14 @@ const genblazeManifest = JSON.stringify({
 });
 
 describe("proof handler", () => {
+  it("rate-limits proof reads without blocking a normal demo", () => {
+    expect(config.rateLimit).toEqual({
+      windowLimit: 60,
+      windowSize: 60,
+      aggregateBy: ["ip", "domain"]
+    });
+  });
+
   it("returns a sanitized manifest and signed image URL", async () => {
     const store = new TestMemoryStore();
     await createProof(

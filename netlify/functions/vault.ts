@@ -1,4 +1,4 @@
-import type { Handler, HandlerResponse } from "@netlify/functions";
+import type { Config, Handler, HandlerResponse } from "@netlify/functions";
 import { createB2Store } from "./lib/b2-store";
 import {
   createProof,
@@ -57,3 +57,11 @@ export function makeVaultHandler(
 }
 
 export const handler = makeVaultHandler(() => createB2Store());
+
+export const config: Config = {
+  rateLimit: {
+    windowLimit: 5,
+    windowSize: 60,
+    aggregateBy: ["ip", "domain"]
+  }
+};

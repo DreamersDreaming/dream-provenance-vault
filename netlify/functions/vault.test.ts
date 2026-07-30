@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { TestMemoryStore } from "./lib/test-memory-store";
-import { makeVaultHandler } from "./vault";
+import { config, makeVaultHandler } from "./vault";
 
 const pngBase64 = Buffer.from([
   0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a
@@ -28,6 +28,14 @@ const genblazeManifest = JSON.stringify({
 });
 
 describe("vault handler", () => {
+  it("rate-limits public writes to protect the free-tier bucket", () => {
+    expect(config.rateLimit).toEqual({
+      windowLimit: 5,
+      windowSize: 60,
+      aggregateBy: ["ip", "domain"]
+    });
+  });
+
   it("returns 201 only after all three B2 objects are stored", async () => {
     const store = new TestMemoryStore();
     const handler = makeVaultHandler(store);

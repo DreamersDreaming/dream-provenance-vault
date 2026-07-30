@@ -22,6 +22,7 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] Local filesystem paths are rejected
 - [x] Private bucket design and short-lived signed image URL
 - [x] Three-object receipt commit order
+- [x] Public write/read rate limits configured
 - [ ] Real B2 synthetic upload succeeded
 - [ ] Real B2 private readback succeeded
 - [ ] Production proof URL opens in a fresh browser session
@@ -65,4 +66,3 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [ ] No secret appears in Git history, app bundle, screenshots, or chat
 - [ ] No apartment address appears anywhere
 - [ ] No local user-profile path appears in the public manifest or bundle
-

@@ -99,6 +99,10 @@ B2_APPLICATION_KEY=<bucket-scoped-application-key>
 Never expose these values through Vite variables, browser code, screenshots,
 logs, or commits.
 
+Public writes are limited to five requests per IP/domain per minute, and proof
+reads to sixty per minute. These code-based Netlify limits protect the free-tier
+bucket from accidental or abusive traffic.
+
 ## Verification
 
 ```bash

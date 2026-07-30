@@ -7,7 +7,7 @@ claims. Update it immediately before final Devpost submission.
 
 | Gate | Evidence | Status |
 |---|---|---|
-| Node tests | 7 files, 28 tests | PASS |
+| Node tests | 7 files, 30 tests | PASS |
 | TypeScript | `tsc --noEmit` | PASS |
 | Production build | Vite 6.4.3 | PASS |
 | Genblaze tests | 2 Python tests | PASS |
@@ -24,7 +24,7 @@ claims. Update it immediately before final Devpost submission.
 - Standalone repository, isolated from the live Doream worktree
 - Branch: `codex/backblaze-provenance-vault`
 - Latest locally verified commit before external configuration:
-  `d1bb444216183c9ea5e1243bbd074e0f8740c7ed`
+  recorded by `git rev-parse HEAD` after each verified commit
 
 ## Claim boundary
 
@@ -38,4 +38,3 @@ production URL, public sub-three-minute video, and a Devpost receipt.
 - Backblaze account creation: CAPTCHA required; no credit card requested
 - Netlify CLI authentication: not started until the prior browser approvals are
   completed, to avoid duplicate pop-ups
-
