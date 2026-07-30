@@ -101,8 +101,9 @@ user-controlled deletion and export of the entire evidence bundle.
 Backblaze B2, Genblaze Core, React, TypeScript, Vite, Netlify Functions, AWS SDK,
 Vitest
 
-## Links to complete before submission
+## Submission links
 
-- Working app:
+- Working app: https://doream-provenance-vault.netlify.app
 - Public GitHub repository:
-- Public demo video:
+  https://github.com/DreamersDreaming/dream-provenance-vault
+- Public demo video: https://youtu.be/fW3C3nxwI1E
