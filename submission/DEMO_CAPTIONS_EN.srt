@@ -1,40 +1,29 @@
 1
 00:00:00,000 --> 00:00:18,000
 Generative images are easy to copy, but their production evidence is easy to lose.
-Dream Provenance Vault preserves a verifiable lineage without storing the private dream story.
+Dream Provenance Vault preserves verifiable lineage without storing the private dream story.
 
 2
 00:00:18,000 --> 00:00:42,000
-This prototype records integrity and storage provenance.
-It does not claim copyright ownership or request dream text, identity, address, or a private prompt.
+This prototype records integrity and storage provenance. It does not claim copyright ownership.
+It never asks for dream text, interpretation, identity, address, or a private prompt.
 
 3
 00:00:42,000 --> 00:01:12,000
-The synthetic sample includes a real two-step Genblaze Core manifest:
-Doream image generation and Doream Prism Card rendering.
+The synthetic sample includes a real two-step Genblaze Core manifest.
+The source prompt is redacted, and the final asset hash must match the card exactly.
 
 4
-00:01:12,000 --> 00:01:28,000
-The private source prompt is redacted.
-The final Genblaze asset hash must match the selected card exactly.
+00:01:12,000 --> 00:01:43,000
+The browser fingerprints the file, and the server repeats the SHA-256 and Genblaze checks.
+Only then are the image, canonical manifest, and receipt written to private Backblaze B2.
 
 5
-00:01:28,000 --> 00:01:48,000
-The browser fingerprints the file first.
-The server independently repeats the SHA-256 and Genblaze checks.
+00:01:43,000 --> 00:02:05,000
+The random proof URL retrieves the private receipt through a short-lived signed B2 image URL.
+It displays the server hash, Genblaze canonical hash, timestamp, and verified step count.
 
 6
-00:01:48,000 --> 00:02:05,000
-Only then are three objects written to private Backblaze B2:
-the image, Genblaze canonical manifest, and application receipt.
-
-7
 00:02:05,000 --> 00:02:20,000
-The proof page uses a short-lived signed B2 image URL
-and shows both the server hash and Genblaze canonical hash.
-
-8
-00:02:20,000 --> 00:02:35,000
-Genblaze explains the pipeline. Backblaze B2 preserves the artifact and evidence.
-Dream Provenance Vault makes that claim visible, testable, and privacy-safe.
-
+Genblaze explains the pipeline. Backblaze B2 preserves the exact artifact and evidence.
+Dream Provenance Vault makes that narrow claim visible, testable, and privacy-safe.
