@@ -1,0 +1,26 @@
+Generative images are easy to copy, but their production evidence is easy to lose.
+Dream Provenance Vault preserves a verifiable media lineage without storing the
+private dream story behind the image.
+
+This prototype records integrity and storage provenance. It does not claim
+copyright ownership. It never asks for dream text, interpretation, identity,
+address, or a private prompt.
+
+The bundled synthetic sample includes a real Genblaze Core manifest. It records
+two steps: Doream image generation and Doream Prism Card rendering. The private
+source prompt is redacted, and the final Genblaze asset hash must match the
+selected card exactly.
+
+The browser fingerprints the file first. The server independently repeats the
+SHA-256 and Genblaze checks. Only then does it write three objects to a private
+Backblaze B2 bucket: the image, the Genblaze canonical manifest, and the app
+receipt.
+
+The random proof URL retrieves the private receipt. The image is served with a
+short-lived signed B2 URL, while the page shows the server hash and Genblaze
+canonical hash.
+
+Genblaze explains the generative pipeline. Backblaze B2 preserves the exact
+artifact and its evidence together. Dream Provenance Vault makes that narrow
+claim visible, testable, and privacy-safe.
+
