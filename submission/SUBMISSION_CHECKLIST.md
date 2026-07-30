@@ -43,12 +43,12 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 
 ## Public assets
 
-- [ ] GitHub repository URL (public preferred; private requires access for
-      `b2genblaze`):
+- [x] Public GitHub repository:
+      https://github.com/DreamersDreaming/dream-provenance-vault
 - [ ] Public production URL:
 - [ ] Public English demo video under 3 minutes on YouTube, Vimeo, or Youku:
-- [ ] Repository README contains setup and claim boundaries
-- [ ] Devpost copy names the actual providers and models
+- [x] Repository README contains setup and claim boundaries
+- [x] Devpost copy names the actual providers and models
 - [ ] Video shows the real production B2 write and proof readback
 - [ ] No copyrighted music or unlicensed third-party material appears in video
 

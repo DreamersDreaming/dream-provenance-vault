@@ -15,6 +15,7 @@ claims. Update it immediately before final Devpost submission.
 | Production dependency audit | `npm audit --omit=dev --audit-level=high` | 0 vulnerabilities |
 | Desktop visual QA | 1440 × 1000 actual browser | PASS |
 | Mobile layout QA | 390 × 844; `scrollWidth === innerWidth` | PASS |
+| Public GitHub repository | `DreamersDreaming/dream-provenance-vault` | PASS |
 | Real B2 write/readback | No production credentials yet | NOT RUN |
 | Public production URL | Netlify authentication pending | NOT RUN |
 | Devpost receipt | Required video and production URL pending | NOT SUBMITTED |
@@ -51,7 +52,6 @@ Devpost receipt.
 
 ## External blockers
 
-- GitHub CLI web authentication: user approval pending
 - Backblaze account creation: CAPTCHA required; no credit card requested
-- Netlify CLI authentication: not started until the prior browser approvals are
-  completed, to avoid duplicate pop-ups
+- Netlify CLI authentication: not started until the Backblaze browser approval
+  is completed, to avoid duplicate pop-ups
