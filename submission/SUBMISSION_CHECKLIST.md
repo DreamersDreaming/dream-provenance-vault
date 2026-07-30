@@ -48,7 +48,8 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
       https://github.com/DreamersDreaming/dream-provenance-vault
 - [x] Public production URL:
       https://doream-provenance-vault.netlify.app
-- [ ] Public English demo video under 3 minutes on YouTube, Vimeo, or Youku:
+- [x] Public English demo video under 3 minutes on YouTube:
+      https://youtu.be/fW3C3nxwI1E
 - [x] Repository README contains setup and claim boundaries
 - [x] Devpost copy names the actual providers and models
 - [x] Local final video shows the real production B2 write and proof readback

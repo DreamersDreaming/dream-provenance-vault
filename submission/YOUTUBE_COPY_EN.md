@@ -15,7 +15,11 @@ card, privacy-redacted Genblaze manifest, and application receipt in a private
 Backblaze B2 bucket. Proof pages retrieve the private image through a
 short-lived signed B2 URL.
 
-Working app: [ADD PRODUCTION URL]
+Working app:
+https://doream-provenance-vault.netlify.app
+
+Verified production proof shown in the video:
+https://doream-provenance-vault.netlify.app/proof/213fadb4-117a-4014-91e7-142cf3e93c07
 
 Source code:
 https://github.com/DreamersDreaming/dream-provenance-vault
@@ -27,9 +31,9 @@ copyright ownership or store private dream narratives.
 
 ## Visibility and checks
 
-- Visibility: Public
+- Visibility: Unlisted (publicly accessible by link)
 - Language: English
 - Music: None
-- Captions: Upload `DEMO_CAPTIONS_EN.srt`
+- Captions: English explanations are burned into the video
 - Audience: Not made for kids
-- Duration: 2 minutes 20 seconds target; must remain under 3 minutes
+- Duration: 1 minute 14.73 seconds
