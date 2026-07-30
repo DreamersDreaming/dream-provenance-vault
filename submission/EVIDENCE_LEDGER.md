@@ -22,6 +22,9 @@ claims. Update it immediately before final Devpost submission.
 | Public production URL | `https://doream-provenance-vault.netlify.app`; home 200, production function write 201, proof API 200, signed B2 image 200 | PASS |
 | Production E2E integrity | Browser input, server manifest, proof readback, and signed B2 image SHA-256 and byte length all match; Genblaze `verified: true`, 2 steps | PASS |
 | Production browser QA | Desktop 1440 × 1000 and mobile 390 × 844; home/proof 200, no horizontal overflow, zero console/page errors | PASS |
+| Final local demo video | `Dream_Provenance_Vault_Demo_Final_20260731.webm`; 74.73 seconds, 1280 × 720, 30 fps, VP9, 3.37 MB | PASS — LOCAL, NOT PUBLIC |
+| Final video content QA | Frames at 2, 22, 48, and 69 seconds show live product value, verified input, B2 receipt, and the narrow claim/public links; no draft badge or private data | PASS |
+| Video proof readback | Recorded artifact `213fadb4-117a-4014-91e7-142cf3e93c07`; home/proof 200, B2 signed image readback hash matches, Genblaze verified with 2 steps | PASS |
 | Devpost receipt | Required video and production URL pending | NOT SUBMITTED |
 
 ## Current source state
@@ -69,6 +72,9 @@ Devpost receipt.
   documents, screenshots, or the frontend bundle
 - Netlify authentication: existing account login verified in the authenticated
   Temp Chrome session; no password was changed
+- Temporary Netlify personal access token: created only for the isolated
+  deployment, revoked after verification, and cleared from the automation
+  process memory
 - Netlify environment: the Free plan does not permit secret variables with
   restricted scopes. Credentials are therefore stored as production
   site-level variables, with no Git integration or automated builds, and are

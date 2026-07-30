@@ -51,8 +51,8 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [ ] Public English demo video under 3 minutes on YouTube, Vimeo, or Youku:
 - [x] Repository README contains setup and claim boundaries
 - [x] Devpost copy names the actual providers and models
-- [ ] Video shows the real production B2 write and proof readback
-- [ ] No copyrighted music or unlicensed third-party material appears in video
+- [x] Local final video shows the real production B2 write and proof readback
+- [x] No copyrighted music or unlicensed third-party material appears in video
 
 ## Devpost
 
