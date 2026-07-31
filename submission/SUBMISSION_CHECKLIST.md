@@ -1,6 +1,7 @@
 # Submission Checklist
 
-Final submission is **NO_GO** until every hard gate below has current evidence.
+Final submission is **GO — SUBMITTED 2026-07-31 11:21 KST**. Judge-access
+availability remains an ongoing obligation through the judging period.
 
 ## Eligibility and rules
 
@@ -9,7 +10,7 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 - [x] Individual entrant is allowed
 - [x] Backblaze B2 is used by the working application
 - [x] Genblaze is used for the canonical media lineage
-- [ ] Re-open official rules immediately before final submission
+- [x] Re-open official rules immediately before final submission
 - [x] Official deadline confirmed: 2026-08-03 17:00 EDT
       (2026-08-04 06:00 KST)
 - [x] Judging access period confirmed: through 2026-08-11 17:00 EDT
@@ -58,16 +59,17 @@ Final submission is **NO_GO** until every hard gate below has current evidence.
 ## Devpost
 
 - [x] Entrant account joined the hackathon
-- [ ] Required project fields complete
-- [ ] Working app URL entered
-- [ ] Public repository URL entered
-- [ ] Public video URL entered
-- [ ] Provider/model fields entered accurately
-- [ ] Terms and submission preview checked
-- [ ] Final submit pressed
-- [ ] Receipt URL or confirmation screenshot saved
-- [ ] Working app remains free and accessible through the judging period
-- [ ] Master application ledger updated
+- [x] Required project fields complete
+- [x] Working app URL entered
+- [x] Public repository URL entered
+- [x] Public video URL entered
+- [x] Provider/model fields entered accurately
+- [x] Terms and submission preview checked
+- [x] Final submit pressed
+- [x] Receipt URL or confirmation screenshot saved
+- [x] Working app is currently free and accessible; retain through the judging
+      period
+- [x] Master application ledger updated
 
 ## Credentials and privacy
 

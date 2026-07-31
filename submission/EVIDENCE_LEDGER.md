@@ -1,7 +1,7 @@
 # Evidence Ledger
 
 This file separates verified implementation evidence from external submission
-claims. Update it immediately before final Devpost submission.
+claims. It was updated immediately after the final Devpost submission.
 
 ## Local implementation — verified 2026-07-31 KST
 
@@ -25,7 +25,7 @@ claims. Update it immediately before final Devpost submission.
 | Final demo video | `https://youtu.be/fW3C3nxwI1E`; unlisted/link-accessible YouTube video, independently accessible without the authenticated session; local source is 74.73 seconds, 1280 × 720, 30 fps, VP9, 3.37 MB | PASS — PUBLIC BY LINK |
 | Final video content QA | Frames at 2, 22, 48, and 69 seconds show live product value, verified input, B2 receipt, and the narrow claim/public links; no draft badge or private data | PASS |
 | Video proof readback | Recorded artifact `213fadb4-117a-4014-91e7-142cf3e93c07`; home/proof 200, B2 signed image readback hash matches, Genblaze verified with 2 steps | PASS |
-| Devpost receipt | Production URL, repository, and public video are ready; project creation is still blocked by the visible image reCAPTCHA | NOT SUBMITTED |
+| Devpost final submission | Project `1119478`; final banner states `Project submitted!`; manage-submissions page shows `SUBMITTED`; receipt and two hashed screenshots saved | PASS — SUBMITTED 2026-07-31 11:21 KST |
 
 ## Current source state
 
@@ -40,12 +40,12 @@ claims. Update it immediately before final Devpost submission.
 
 ## Claim boundary
 
-Local PASS does not mean the hackathon submission is complete. Final GO
-requires a judge-accessible GitHub repository, real private B2
-upload/readback, public production URL, public sub-three-minute video, and a
-Devpost receipt.
+The external hackathon submission is complete. The judge-accessible GitHub
+repository, private B2 upload/readback, production URL, sub-three-minute video,
+and Devpost receipt were all verified. This does not imply selection or an
+award.
 
-## Official submission constraints — verified 2026-07-30 KST
+## Official submission constraints — re-verified 2026-07-31 KST
 
 - Submission deadline: 2026-08-03 17:00 EDT
   (2026-08-04 06:00 KST)
